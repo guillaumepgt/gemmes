@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cristal</title>
+</head>
+<body>
+    <img src="rouge.png" width="20" height="20">
+    <p id="CristalR-text"> : 0</p>
+    <input type="button" value="Minage" onClick="ClicMine()">
+    <input type="button" value="Up Clic" onClick="Up1()">
+    <input type="button" value="Up Mineur1" onClick="Mineur1()">
+
+
+    <p id="IdPrixUp1Text"></p>
+
+    <script>
+        var CristalRouge = 0;
+        var UpClic = 1;
+        var PrixUp1= 20.
+        var CpsMineur1= 0;
+        var devMode= true;
+        const fps= 30;
+
+        if(devMode === true) {
+            CristalRouge = 10000000;
+        }
+
+        function ClicMine() {
+            CristalRouge+= UpClic;
+            document.getElementById('CristalR-text').innerHTML = "Cristaux Rouge:" + Math.round(CristalRouge);
+
+        }
+
+        function Up1() {
+            if(CristalRouge >= PrixUp1) {
+                UpClic +=1;
+                CristalRouge-= PrixUp1;
+                PrixUp1= Math.round(PrixUp1 * 1.1);
+                document.getElementById('CristalR-text').innerHTML = "Cristaux Rouge:" + Math.round(CristalRouge);
+                document.getElementById('IdPrixUp1Text').innerHTML = "Prix Up:" + PrixUp1;
+            }
+            else{
+                alert('Pas assez de cristaux, il faut:'+ PrixUp1)
+            }
+        }
+
+        function Mineur1() {
+            if(CristalRouge >= 100) {
+                CristalRouge-=100;
+                CpsMineur1 += 1;
+            }
+
+        }
+
+        setInterval(function() {
+            CristalRouge+=CpsMineur1/fps;
+            document.getElementById('CristalR-text').innerHTML = "Cristaux Rouge:" + Math.round(CristalRouge);
+        },1000/fps)
+
+    </script>
+</body>
+</html>
