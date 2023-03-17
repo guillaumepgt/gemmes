@@ -53,7 +53,7 @@ body {
 .container.right-panel-active .sign-up-container {
   transform: translateX(100%);
   opacity: 0;
-  
+} 
 .login-register {
     position: absolute;
     top: 50%;
