@@ -91,4 +91,34 @@ body {
   margin-top: 10px;
   text-align: center;
 }
+.login-form {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.login-form h1 {
+  margin: 30px 0;
+}
+
+.login-form label, .login-form input[type="text"], .login-form input[type="password"], .login-form button {
+  display: block;
+  margin: 20px 0;
+  width: 80%;
+  max-width: 300px;
+}
+
+.login-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
