@@ -10,87 +10,15 @@ body {
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  width: 400px;
+ width: 190px;
+ height: 254px;
+ border-radius: 30px;
+ background: #212121;
+ box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(60, 60, 60);
 }
 
-.card .header {
-  background: #9900cc;
-  color: #fff;
-  font-size: 24px;
-  padding: 20px;
-  text-align: center;
-}
 
-.card .body {
-  padding: 20px;
-}
-
-.card .input-group {
-  margin: 10px 0;
-}
-
-.card .input-group label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.card .input-group input {
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  display: block;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-}
-
-.card .input-group input:focus {
-  border-color: #9900cc;
-  outline: none;
-}
-
-.card .btn {
-  background-color: #9900cc;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-}
-
-.card .btn:hover {
-  background-color: #ff6600;
-}
-
-.card .register {
-  color: #9900cc;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.card .register a {
-  color: #9900cc;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.card .register a:hover {
-  text-decoration: underline;
-}
-
-.card .message {
-  color: red;
-  font-size: 14px;
-  margin-top: 10px;
-  text-align: center;
-}
 
 .login-form {
   background-color: white;
