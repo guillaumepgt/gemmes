@@ -3,12 +3,8 @@ body {
 }
 
 .container {
-  border-width: 1px;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  box-sizing: content-box;
-  background-color: white;
+  top: 50%;
+  left:50%;
   
 }
 
