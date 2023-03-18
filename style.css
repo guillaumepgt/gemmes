@@ -3,6 +3,7 @@ body {
 }
 
 .container {
+  display: flex;
   top: 50%;
   left:50%;
   background: white;
