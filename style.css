@@ -1,0 +1,100 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.Login_Frame {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left:calc(50% - 500px/2);
+    top: calc(50% - 500px/2);
+    background-color: rgba(26, 23, 23, 0.63);
+    border-radius: 10px;
+    display: grid;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    margin-top: 0px;
+    color: white
+}
+.case label{
+    position: relative;
+    left: 10%;
+    bottom: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+
+}
+.case input{
+    display: flex;
+    top: 0;
+    left: calc(50% - 400px/2);
+    padding: 10px 0;
+    font-size: 14px;
+    background-color: rgba(26, 23, 23,0);
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    width: 80%;
+}
+
+.souvenir a, .nocompte{
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    left: 10%;
+}
+.souvenir label, .nocompte a{
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+.souvenir span{
+    margin-left: 30%;
+}
+.conec a:hover{
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+}
+
+.conec a {
+    position: relative;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    left: 10%;
+    border: 2px solid;
+  }
+  
+.conec a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+}
+  
